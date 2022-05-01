@@ -1,0 +1,139 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.header_top_wrap {
+  background-color: #9A5B6A;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 26px 20px;
+}
+.header_top .logo {
+  max-width: 158px;
+}
+.header_top .header_search {
+  position: relative;
+  width: 438px;
+}
+.header_top .header_search input {
+  width: 100%;
+  height: 40px;
+  padding: 0 50px 0 5px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+.header_top .header_search input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.header_top .header_search .icon-search {
+  position: absolute;
+  right: 15px;
+  bottom: 8px;
+  font-size: 24px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header_top .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 442px;
+}
+.header_top .menu_sub {
+  color: #fff;
+  text-align: center;
+}
+.header_top .menu_sub span {
+  font-size: 24px;
+}
+.header_top .menu_sub p {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.Header_bottom {
+  background-color: #EFE6DD;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+.nav .nav_burger_wrap {
+  display: flex;
+  cursor: pointer;
+}
+.nav .nav_burger_wrap .burger_all {
+  font-size: 18px;
+}
+.nav .nav_burger {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 15px;
+  margin-right: 7px;
+}
+.nav .nav_burger:after, .nav .nav_burger:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: transform 300ms;
+}
+.nav .nav_burger:after {
+  top: 0;
+}
+.nav .nav_burger:before {
+  bottom: 0;
+}
+.nav .nav_burger span {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transition: opacity 300ms;
+}
+.nav .nav_burger.active span {
+  opacity: 0;
+}
+.nav .nav_burger.active:after {
+  top: 7px;
+  transform: rotate(45deg);
+}
+.nav .nav_burger.active:before {
+  bottom: 7px;
+  transform: rotate(-45deg);
+}
+.nav a {
+  font-size: 18px;
+  color: #000;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=header.css.map */

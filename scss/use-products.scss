@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.use_products_inner {
+    display: flex;
+    column-gap: 45px;
+    margin-bottom: 264px;
+}
+
+.use_product_img {
+    width: 33.333%;
+
+    &.img_center {
+        padding: 5% 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

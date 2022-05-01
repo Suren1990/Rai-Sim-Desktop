@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+.feel_love {
+    display: flex;
+    margin-bottom: 140px;
+    background-color: $secondColor;
+}
+
+.feel_love_text_wrap {
+    width: 53.75%;
+}
+
+.feel_love_img {
+    width: 46.25%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    };
+}
+
+.feel_love_text {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 46px 20px;
+    
+    h3 {
+        margin-bottom: 32px;
+        font-size: 76px;
+        line-height: 88px;
+
+        span {
+            font-size: 1.9em;
+            line-height: 1.05;
+        }
+    }
+
+    p {
+        max-width: 150px;
+        font-size: 24px;
+        line-height: 28px;
+
+        span {
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+}

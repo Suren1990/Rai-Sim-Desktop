@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+.neauthy_product {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.neauthy_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // max-width: 460px;
+    width: 29%;
+    padding: 40px 22px;
+    background-color: $secondColor;
+
+    h5 {
+        margin: auto auto 16px;
+        font-size: 64px;
+        line-height: 75px;
+        color: rgba(41, 23, 10, 0.8);
+
+        span {
+            font-size: 72px;
+            line-height: 85px;
+        }
+    }
+}
+
+.neauthy_img {
+
+    &.neauthy_img_left {
+        width: 32%;
+    }
+
+    &.neauthy_img_right {
+        width: 39%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}

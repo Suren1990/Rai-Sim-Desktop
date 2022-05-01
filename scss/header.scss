@@ -1,0 +1,165 @@
+@import './variables.scss';
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header_top_wrap {
+    background-color: $mainColor;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 26px 20px;
+
+    .logo {
+        max-width: 158px;
+    }
+
+    .header_search {
+        position: relative;
+        width: 438px;
+
+        input {
+            width: 100%;
+            height: 40px;
+            padding: 0 50px 0 5px;
+            font-size: 24px;
+            line-height: 28px;
+            color: #fff;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+
+            &::placeholder {
+                color: rgba(255,255,255, .8);
+            }
+        }
+
+        .icon-search {
+            position: absolute;
+            right: 15px;
+            bottom: 8px; 
+            font-size: 24px;
+            color: #fff;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 442px;
+    }
+
+    .menu_sub {
+        color: #fff;
+        text-align: center;
+
+        span {
+            font-size: 24px;
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: 20px;
+        }
+    }
+}
+
+.Header_bottom {
+    background-color: $secondColor;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 20px;
+
+    .nav_burger_wrap {
+        display: flex;
+        cursor: pointer;
+
+        .burger_all {
+            font-size: 18px;
+        }
+    }
+
+    .nav_burger {
+        position: relative;
+        display: block;
+        width: 24px;
+        height: 15px;
+        margin-right: 7px;
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            transition: transform 300ms;
+        }
+        
+        &:after {
+            top: 0;
+        }
+
+        &:before {
+            bottom: 0;
+        }
+
+        span {
+            position: absolute;
+            top: 7px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            transition: opacity 300ms;
+        }
+
+        &.active {
+
+            span {
+                opacity: 0;
+            }
+
+            &:after {
+                top: 7px;
+                transform: rotate(45deg);
+            }
+    
+            &:before {
+                bottom: 7px;
+                transform: rotate(-45deg);
+            }
+
+        }
+    }
+    
+    a {
+        font-size: 18px;
+        color: #000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

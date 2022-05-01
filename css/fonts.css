@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Gilda Display';
+    src: url('../fonts/GildaDisplay-Regular.eot');
+    src: local('Gilda Display'), local('GildaDisplay-Regular'),
+        url('../fonts/GildaDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GildaDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/GildaDisplay-Regular.woff') format('woff'),
+        url('../fonts/GildaDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo Narrow';
+    src: local('Archivo Narrow Regular'), local('Archivo-Narrow-Regular'),
+        url('../fonts/ArchivoNarrow-Regular.woff2') format('woff2'),
+        url('../fonts/ArchivoNarrow-Regular.woff') format('woff'),
+        url('../fonts/ArchivoNarrow-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

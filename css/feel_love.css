@@ -1,0 +1,44 @@
+.feel_love {
+  display: flex;
+  margin-bottom: 140px;
+  background-color: #EFE6DD;
+}
+
+.feel_love_text_wrap {
+  width: 53.75%;
+}
+
+.feel_love_img {
+  width: 46.25%;
+}
+.feel_love_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feel_love_text {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 46px 20px;
+}
+.feel_love_text h3 {
+  margin-bottom: 32px;
+  font-size: 76px;
+  line-height: 88px;
+}
+.feel_love_text h3 span {
+  font-size: 1.9em;
+  line-height: 1.05;
+}
+.feel_love_text p {
+  max-width: 150px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.feel_love_text p span {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+/*# sourceMappingURL=feel_love.css.map */

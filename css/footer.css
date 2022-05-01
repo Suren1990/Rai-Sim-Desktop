@@ -1,0 +1,70 @@
+.footer {
+  font-family: "Archivo Narrow";
+  background-color: #9A5B6A;
+}
+
+.footer_inner {
+  display: flex;
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 20px 55px;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer_nav_sub {
+  width: 33.333%;
+}
+.footer_nav_sub h6 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer_nav_sub a {
+  display: block;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer_nav_sub a:hover {
+  text-decoration: underline;
+}
+.footer_nav_sub a + a {
+  margin-top: 16px;
+}
+.footer_nav_sub + .footer_nav_sub {
+  padding-left: 64px;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.footer_social {
+  display: flex;
+  align-items: flex-start;
+}
+.footer_social a {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer_social a + a {
+  margin-left: 70px;
+}
+
+.footer_bottom p {
+  padding: 36px 20px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+  border-top: 2px solid #fff;
+}
+
+/*# sourceMappingURL=footer.css.map */
